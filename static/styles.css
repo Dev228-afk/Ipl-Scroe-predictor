@@ -1,0 +1,276 @@
+html{
+	height: 100%;
+	margin: 0;
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	height: 100%;
+	margin: 0;
+	background-color: #ffffff;
+}
+
+#bodi{
+	background-image: url("https://cdn.dnaindia.com/sites/default/files/styles/full/public/2021/08/06/989281-ipl-2021-auc.jpg");
+	background-repeat:repeat-x;
+	opacity: .90;
+	
+}
+
+
+/* Website Title */
+.container{
+	color: #000000;
+    padding: 20px;
+	display: block;
+	text-align: center;
+	background: linear-gradient(45deg, #443B96, #F60B68, #F4483A);
+	font-weight: bold;
+}
+
+.container-heading{
+    margin: 0;
+	font-weight: 100;
+	width: auto;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.heading_first{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bolder;
+}
+
+.description p{
+    font-style: italic;
+    font-size: 12px;
+	font-weight: 100;
+    margin: 0;
+}
+
+/* Prediction Area */
+.prediction-area{
+	position: relative;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 20px 40px;
+}
+
+.ipl-banner-left{
+	display: inline-block;
+	position: absolute;
+	left: 40px;
+	top: -5px;
+	width: 250px;
+	height: 429px;
+	border-radius: 15px;
+	-webkit-box-shadow: 7px 6px 18px -2px rgba(94,94,94,0.61);
+	-moz-box-shadow: 7px 6px 18px -2px rgba(94,94,94,0.61);
+	box-shadow: 7px 6px 18px -2px rgba(94,94,94,0.61);
+	margin-top: 30px;
+}
+
+.div2, .results{
+	display: inline-block;
+	width: auto;
+	height: 429px;
+	text-align: center;
+}
+
+.ipl-banner-right{
+	display: inline-block;
+	width: 250px;
+	height: 429px;
+	position: absolute;
+	right: 40px;
+	top: -5px;
+	border-radius: 15px;
+	-webkit-box-shadow: 7px 6px 18px -2px rgba(94,94,94,0.61);
+	-moz-box-shadow: 7px 6px 18px -2px rgba(94,94,94,0.61);
+	box-shadow: 7px 6px 18px -2px rgba(94,94,94,0.61);
+	margin-top: 30px;
+}
+
+.image-width{
+	height: 400px;
+}
+
+.slider-frame{
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+@keyframes slide-animation-up{
+	0% {top: 0;}
+	6% {top: -433px;}
+	12% {top: -866px;}
+	18% {top: -1299px;}
+	24% {top: -1732px;}
+	30% {top: -2165px;}
+	36% {top: -2598px;}
+	42% {top: -3031px;}
+	50% {top: -3031px;}
+	56% {top: -3031px;}
+	62% {top: -2598px;}
+	68% {top: -2165px;}
+	74% {top: -1732px;}
+	80% {top: -1299px;}
+	86% {top: -866px;}
+	92% {top: -433px;}
+	100% {top: 0;}
+}
+
+@keyframes slide-animation-down{
+	0% {bottom: 3031px;}
+	6% {bottom: 2598px;}
+	12% {bottom: 2165px;}
+	18% {bottom: 1732px;}
+	24% {bottom: 1299px;}
+	30% {bottom: 866px;}
+	36% {bottom: 433px;}
+	42% {bottom: 0;}
+	50% {bottom: 0;}
+	56% {bottom: 0;}
+	62% {bottom: 433px;}
+	68% {bottom: 866px;}
+	74% {bottom: 1299px;}
+	80% {bottom: 1732px;}
+	86% {bottom: 2165px;}
+	92% {bottom: 2598px;}
+	100% {bottom: 3031px;}
+}
+
+.slide-images-up{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	animation-name: slide-animation-up;
+	animation-duration: 50s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-out;
+}
+
+.slide-images-down{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	animation-name: slide-animation-down;
+	animation-duration: 50s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-out;
+}
+
+.image-container{
+	margin-left: 0px;
+	float: none;
+
+}
+
+/* Form */
+.form-input{
+	background-color: #E9E9E9;
+	width: 380px;
+	height: 35px;
+	border-radius: 3px;
+	border: 0;
+	text-align: center;
+	font-weight: bold;
+	-webkit-box-shadow: inset 7px 3px 16px -10px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 7px 3px 16px -10px rgba(0,0,0,0.75);
+	box-shadow: inset 7px 3px 10px -10px rgba(0,0,0,0.75);
+	margin-bottom: 15px;
+	border-color: #000000;
+	border-width: 10px;
+	font-size: small;
+	padding: 5px;
+}
+
+.option{
+	font-weight: bold;
+	border-radius: 1px;
+	width: 8px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.align-center{
+	padding: 0 30px;
+}
+
+/* Predict Button */
+.myButton {
+	background-color:#050505;
+	border-radius: 5px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:7px 30px;
+	margin-top: 10px;
+	text-decoration:none;
+	transition: 0.2s ease-out;
+	width: 50%;
+	height: 50px;
+	font-size: medium;
+}
+
+.myButton:hover{
+	background-color: #ffffff;
+	color: #000000;
+	box-shadow: inset 2px 3px 5px -5px rgba(0,0,0,0.75);
+}
+
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+/* Footer */
+.footer{
+	background-color: #E9E9E9;
+	color: #000000;
+	padding: 12px;
+    text-align: center;
+	background: linear-gradient(45deg, #443B96, #F60B68, #F4483A);
+	margin-top: 7%;
+	height: 77px;
+}
+
+.contact-icon{
+	color: #000000;
+	padding: 7px;
+}
+
+.contact-icon:hover{
+	color: #a6a19a;
+}
+
+.footer-description{
+	margin: 0;
+	font-size: 12px;
+	font-weight: 100;
+}
+
+/* Result */
+.results{
+  display: inline-block;
+  width: auto;
+  height: 429px;
+  line-height: 400px;
+  text-align: center;
+  /* background-color: (255,255,255,.9); */
+  
+  
+}
+
+#result_text{
+	color: rgb(255, 255, 255);
+	font-weight: bolder;
+	padding: 2ch;
+	margin-right: 4.6ch;
+	 font-size: medium;
+}
